@@ -46,3 +46,9 @@ Customer request -> Records -> Policy -> (human approval if needed) -> Reply
 
 ## Built with
 Switch, OpenCode (free models), Mattermost, Docker. Built with AI assistance (Claude) and explained by the author. All data is fake.
+
+## Limitations and next steps
+- Approvals must be typed as `@riyaa-policy APPROVE <order>`, because agents only listen when mentioned.
+- The data is a local JSON file. A real system would read orders from a database or API.
+- PII is kept out of replies by the Reply agent's instructions only. A stronger version would add Switch Trust guardrails to redact personal data before it reaches the room (not used here, since Switch Trust guardrails support Anthropic, Gemini and OpenAI models and this demo runs on OpenCode free models).
+- Free models can be slow or inconsistent, so each step can take up to a minute.
