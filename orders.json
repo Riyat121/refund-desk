@@ -1,0 +1,5 @@
+﻿[
+  {"order_id":"1001","customer":"Asha","amount":20,"delivered_days_ago":5,"refunds_90d":0,"address_match":true},
+  {"order_id":"1002","customer":"Rohan","amount":320,"delivered_days_ago":12,"refunds_90d":1,"address_match":true},
+  {"order_id":"1003","customer":"Test User","amount":899,"delivered_days_ago":3,"refunds_90d":4,"address_match":false}
+]
